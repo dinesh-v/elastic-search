@@ -23,3 +23,6 @@ INTO TABLE ipps_summary
 COLUMNS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
+
+-- 2162 rows in set (0.50 sec)
+select provider_name from ipps_summary where provider_name like '%bay%';

@@ -45,3 +45,6 @@ curl -XPUT 'http://127.0.0.1:9200/medical_insurance/ipps_summary/1?pretty' -d '
     "tweet_text": "Whatever user tweeted",
     "created_at": "20161007"
 }'
+
+#Final result time 2162 rows in 24 milli seconds = 0.024 seconds
+GET /medical_insurance/ipps_summary/_search?q=provider_name:*bay*
