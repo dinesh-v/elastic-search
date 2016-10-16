@@ -18,7 +18,7 @@ CREATE TABLE `ipps_summary` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 DESC ipps_summary;
 # Didn't work for me. I used MySQL Workbench to import data from CSV into table
-LOAD DATA INFILE "/Users/dinesh/workspace/elastic-search/src/main/resources/ipps_summary.csv"
+LOAD DATA INFILE '/Users/dinesh/workspace/elastic-search/src/main/resources/ipps_summary.csv'
 INTO TABLE ipps_summary
 COLUMNS TERMINATED BY ','
 LINES TERMINATED BY '\n'
